@@ -34,7 +34,7 @@ public class CriminalCase extends Case {
 			j.askQuestion();
 		}
 		
-		this.accuser.askQuestions();
+		this.accuser.askQuestion();
 		
 	}
 	

@@ -14,7 +14,7 @@ public class Accuser extends LawyerClient implements IAccuser {
 	}
 
 	@Override
-	public void askQuestions() {
+	public void askQuestion() {
 		
 		for(Lawyer i : lawyers) {
 			i.askQuestion();

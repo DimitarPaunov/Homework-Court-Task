@@ -12,6 +12,6 @@ public interface IAccuser {
 		return questions.get(new Random().nextInt(questions.size()));
 	}
 	
-	void askQuestions();
+	void askQuestion();
 
 }

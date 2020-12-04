@@ -2,9 +2,12 @@ package court.jurists;
 
 public class Judge extends Jurist {
 
-	public Judge(String name, int exp, int cases) {
+	public Judge(String name, int exp, int cases) throws InvalidJudgeExperience {
 		
-		super(name, exp > 5 ? exp: 5, cases);
+		super(name, cases);
+			if(exp < 5) {
+				throw new InvalidJudgeExperience();
+			}
 		this.position = "Judge";
 		
 	}

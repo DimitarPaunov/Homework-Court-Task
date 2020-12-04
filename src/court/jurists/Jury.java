@@ -2,7 +2,7 @@ package court.jurists;
 
 public class Jury extends Jurist {
 
-	public Jury(String name, int exp, int cases) {
+	public Jury(String name, int exp, int cases) throws InvalidJuryExperience {
 		
 		super(name, exp, cases);
 		this.position = "Jury";

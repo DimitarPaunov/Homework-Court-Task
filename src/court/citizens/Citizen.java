@@ -9,7 +9,6 @@ public abstract class Citizen {
 	private String names;
 	private int age;
 	private String address;
-	private HashSet<Lawyer> lawyers;
 
 	public Citizen(String names, int age, String address) {
 		
@@ -27,16 +26,6 @@ public abstract class Citizen {
 			this.address = address;
 		}else
 			System.out.println("Invalid address!");	
-		
-	}
-
-	public Citizen(String names, int age, String address,HashSet<Lawyer> lawyers) {
-		
-		this(names,age,address);
-		if(lawyers != null && (!lawyers.isEmpty())) {
-			this.lawyers = lawyers;
-		}else
-			System.out.println("Invalid Lawyers!");
 		
 	}
 	
@@ -76,6 +65,6 @@ public abstract class Citizen {
 	
 	@Override
 	public String toString() {
-		return "Citizens [names=" + names + ", age=" + age + ", address=" + address + ", lawyers=" + lawyers + "]";
+		return "Citizens [names=" + names + ", age=" + age + ", address=" + address + ", lawyers=" + "]";
 	}
 }
