@@ -4,14 +4,16 @@ public abstract class Jurist {
 
 	private String name;
 	protected String position;
-	private int exp;
-	private int cases;
+	protected int exp;
+	protected int cases;
 	
 	public Jurist(String name, int exp, int cases) throws InvalidJuryExperience {
 		
 		this(name, cases);
 		if(exp < 1) {
 			throw new InvalidJuryExperience();
+		}else {
+			this.exp = exp;
 		}
 		
 	}
@@ -25,6 +27,16 @@ public abstract class Jurist {
 			this.cases = cases;
 		}else
 			System.out.println("Invalid experince or cases!");
+		
+	}
+	public Jurist(int exp, String name) {
+		if(exp > 0) {
+			this.exp = exp;
+		}
+		if(name != null && (!name.isEmpty())) {
+			this.name = name;
+		}else
+			System.out.println("Invalid name!");
 		
 	}
 	

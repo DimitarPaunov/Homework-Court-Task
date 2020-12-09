@@ -39,15 +39,15 @@ public class SofiaDemo {
 			HashSet<Jurist> jurists = new HashSet<>();
 
 			for (int i = 0; i < 3; i++) {
-				judge.add(new Judge("Judge " + (i + 1), 10, 30));
+				judge.add(new Judge("Judge " + (i + 1), 5, 30));
 			}
 
 			for (int i = 0; i < 10; i++) {
-				jury.add(new Jury("Jury " + (i + 1), 5, 8));
+				jury.add(new Jury("Jury " + (i + 1), 10, 8));
 			}
 
 			for (int i = 0; i < 2; i++) {
-				lawyer.add(new Lawyer("Lawyer " + (i + 1), 7, 10));
+				lawyer.add(new Lawyer("Lawyer " + (i + 1), 10, 10));
 			}
 
 			for (int i = 0; i < 2; i++) {

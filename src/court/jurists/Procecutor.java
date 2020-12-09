@@ -9,6 +9,8 @@ public class Procecutor extends Jurist implements IAccuser {
 		super(name, cases);
 		if(exp < 10) {
 			throw new InvalidProcecutorExperience();
+		}else {
+			this.exp = exp;
 		}
 		this.position = "Procecutor";
 		

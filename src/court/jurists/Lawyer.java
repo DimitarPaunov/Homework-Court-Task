@@ -4,9 +4,11 @@ public class Lawyer extends Jurist {
 
 	public Lawyer(String name, int exp, int cases) throws InvalidLawyerCases {
 		
-		super(name, exp);
+		super(exp, name);
 		if(cases < 10) {
 			throw new InvalidLawyerCases();
+		}else {
+			this.cases = cases;
 		}
 		this.position = "Lawyer";
 		

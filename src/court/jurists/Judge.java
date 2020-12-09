@@ -7,6 +7,8 @@ public class Judge extends Jurist {
 		super(name, cases);
 			if(exp < 5) {
 				throw new InvalidJudgeExperience();
+			}else {
+				this.exp = exp;
 			}
 		this.position = "Judge";
 		
